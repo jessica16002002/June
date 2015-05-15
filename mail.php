@@ -1,4 +1,5 @@
-<?php $Name = $_POST['Name'];
+<?php
+$Name = $_POST['Name'];
 $GuestName = $_POST['GuestName'];
 $Email = $_POST['Email'];
 $Phone = $_POST['Phone'];
@@ -7,7 +8,7 @@ $Meal = $_POST['Meal'];
 $GuestMeal = $_POST['GuestMeal'];
 $Restrictions = $_POST['Restrictions'];
 $Others = $_POST['Others'];
-$formcontent="Your Name: $Name \n Name(s) of Guest(s): $GuestName \n Email: $Email \n Phone: $Phone \n Attending: $Attending \n Meal Option: $Meal \n Guest's Meal Option: $GuestMeal";
+$formcontent="Your Name: $Name \n Name(s) of Guest(s): $GuestName \n Email: $Email \n Phone: $Phone \n Attending Ceremony: $Attending \n Meal Option: $Meal \n Guest's Meal Option: $GuestMeal";
 $recipient = "jessicajoyce.lau@gmail.com";
 $subject = "RSVP";
 $mailheader = "From: $Email \r\n";
