@@ -32,6 +32,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	
+	
 </head>
 
 <body id="page-top">
@@ -46,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">June & Chilton</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/bird1.png" height="120%" style="padding-right: 5px;">June & Chilton</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -107,7 +109,7 @@
 
     <section id="services">
         <div class="container">
-            <div class="row">
+			<div class="row">
                 <div class="col-lg-6 col-md-12 text-center">
                     <a name="details"></a><h2 class="section-heading">Event Details</h2>
                     <hr class="primary">
@@ -143,6 +145,7 @@
                     </div>
                 </div>
 			</div>
+			
 		</div>
     </section>
 	
@@ -171,7 +174,7 @@
 	<section id="services">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 text-center">
+                <div class="col-lg-12 text-center">
                     <a name="registry"></a><h2 class="section-heading">Gift Registry</h2>
                     <hr class="primary">
                 
@@ -180,13 +183,10 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-6 col-md-12 text-center">
-                    <a name="registry"></a><h2 class="section-heading">Gift Registry</h2>
-                    <hr class="primary">
-                
-                    <div class="service-box">
-                        <p class="text-muted">In lieu of a gift registry, in keeping with Chinese tradition of "lucky red envelopes", there will be a money box at the guest table.</p><p>&nbsp;</p>
-                    </div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<img src="img/bird2.png" class="img-responsive" width="15%" align="right">
                 </div>
 			</div>
 		</div>
@@ -201,10 +201,10 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <img src="img/Lori_Waltenbury_Photo_.jpg" class="img-responsive" alt="">
-					<img src="img/Lori_Waltenbury_Photo_026.jpg" class="img-responsive" alt="">
+					<img src="img/Lori_Waltenbury_Photo_021.jpg" class="img-responsive" alt="">
 				</div>
                 <div class="col-lg-4 col-sm-6">
-                    <img src="img/Lori_Waltenbury_Photo_021.jpg" class="img-responsive" alt="">
+                    <img src="img/Lori_Waltenbury_Photo_026.jpg" class="img-responsive" alt="">
                     <img src="img/Lori_Waltenbury_Photo_005.jpg" class="img-responsive" alt="">
                 </div>
 			</div>
@@ -215,35 +215,35 @@
         <div class="container text-center">
             <div class="call-to-action">
                 <a name="rsvp"></a><h2>RSVP</h2>
-				<form role="form">
+				<form role="form" action='mail.php' method='POST'>
                         <div class="row">
                             <div class="form-group col-lg-6">
                                 <label>Your Name | 您的姓名</label>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="Name" required>
                             </div>
 							<div class="form-group col-lg-6">
                                 <label>Name(s) of Guest(s) | 您賓客的姓名</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="GuestName">
                             </div>
                             <div class="form-group col-lg-6">
                                 <label>Your Email | 您的電郵</label>
-                                <input type="email" class="form-control" required>
+                                <input type="email" class="form-control" name="Email" required>
                             </div>
                             <div class="form-group col-lg-6">
                                 <label>Your Phone Number | 您的電話號碼</label>
-                                <input type="tel" class="form-control" required>
+                                <input type="tel" class="form-control" name="Phone" required>
                             </div>
 							<div class="form-group col-lg-12">
                                 <label>Are you attending the ceremony? | 您將會出席結婚儀式嗎？</label>
                                 <div class="radio">
 									<label for="radios-0">
-										<input name="radios" id="radios-0" value="1" checked="checked" type="radio">
+										<input name="Attending" id="radios-0" value="Yes" checked="checked" type="radio">
 										Yes
 									</label>
 								</div>
 								<div class="radio">
 									<label for="radios-1">
-										<input name="radios" id="radios-1" value="2" type="radio">
+										<input name="Attending" id="radios-1" value="No" type="radio">
 										No
 									</label>
 								</div>
@@ -252,19 +252,19 @@
                                 <label>Meal option for dinner | 晚餐選項</label>
                                 <div class="radio">
 									<label for="radios-2">
-										<input name="radios" id="radios-2" value="3" checked="checked" type="radio">
+										<input name="Meal" id="radios-2" value="Meat" checked="checked" type="radio">
 										Chicken & Beef | 雞和牛
 									</label>
 								</div>
 								<div class="radio">
 									<label for="radios-3">
-										<input name="radios" id="radios-3" value="4" type="radio">
+										<input name="Meal" id="radios-3" value="Vegetarian" type="radio">
 										Vegetarian Wellington | 素食
 									</label>
 								</div>
 								<div class="radio">
 									<label for="radios-4">
-										<input name="radios" id="radios-4" value="5" type="radio">
+										<input name="Meal" id="radios-4" value="NotAttending" type="radio">
 										Not Attending | 未能出席
 									</label>
 								</div>
@@ -273,19 +273,19 @@
                                 <label>Meal option for guest | 您的賓客的晚餐選項</label>
                                 <div class="radio">
 									<label for="radios-5">
-										<input name="radios" id="radios-5" value="6" checked="checked" type="radio">
+										<input name="GuestMeal" id="radios-5" value="Meat" checked="checked" type="radio">
 										Chicken & Beef | 雞和牛
 									</label>
 								</div>
 								<div class="radio">
 									<label for="radios-6">
-										<input name="radios" id="radios-6" value="7" type="radio">
+										<input name="GuestMeal" id="radios-6" value="Vegetarian" type="radio">
 										Vegetarian Wellington | 素食
 									</label>
 								</div>
 								<div class="radio">
 									<label for="radios-7">
-										<input name="radios" id="radios-7" value="8" type="radio">
+										<input name="GuestMeal" id="radios-7" value="NotAttending" type="radio">
 										Not Attending | 未能出席
 									</label>
 								</div>
@@ -293,15 +293,16 @@
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
                                 <label>Dietary restrictions for you and your guest(s)? | 您跟您的賓客有任何食物敏感嗎？</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="Restrictions">
                             </div>
 							<div class="form-group col-lg-12">
                                 <label>其他</label>
-                                <textarea class="form-control" rows="4"></textarea>
+                                <textarea class="form-control" rows="4" name="Others"></textarea>
                             </div>
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-default">Submit | 提交</button>
+                                <button type="submit" value="Send" class="btn btn-default">Submit | 提交</button>
+
                             </div>
                         </div>
                     </form>
